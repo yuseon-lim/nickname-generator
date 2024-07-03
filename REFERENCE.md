@@ -1,0 +1,7 @@
+- korean
+  - [위키낱말사전](https://ko.wiktionary.org/wiki)
+- english
+  - adjective: https://gist.github.com/hugsy/8910dc78d208e40de42deb29e62df913
+  - nouns
+    - https://gist.github.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54
+    - https://gist.github.com/wsc/1083459
