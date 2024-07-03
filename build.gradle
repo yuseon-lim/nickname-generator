@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.dogakday'
+group = 'io.dogakday'
 version = '1.0.0'
 
 repositories {
