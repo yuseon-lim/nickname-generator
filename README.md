@@ -66,11 +66,11 @@ NicknameGenerator customGenerator = new NicknameGenerator.NicknameBuilder()
 System.out.println(customGenerator.generate());
 ```
 
-## Note
+## ⭐️ Note
 
 The words used in this library were manually filtered by me, but there might still be some mistakes. If you encounter any offensive words, please report them immediately via an issue, and I will address them promptly.
 
-## Contributing
+## 💌 Contributing
 
 We welcome contributions! If you find any issues or have suggestions, please open an issue or submit a pull request.
 
