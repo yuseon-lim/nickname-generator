@@ -44,8 +44,8 @@ public class NicknameGenerator {
             return this;
         }
 
-        public NicknameBuilder withLanguageMode(String chosenLanguageMode) {
-            this.strategy = getStrategy(chosenLanguageMode);
+        public NicknameBuilder withLanguageMode(String languageMode) {
+            this.strategy = getStrategy(languageMode);
             return this;
         }
 
