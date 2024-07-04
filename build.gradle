@@ -1,9 +1,11 @@
 plugins {
     id 'java'
+    id "com.vanniktech.maven.publish" version "0.29.0" // gradle plugin for publishing to maven
+    id 'signing' // gpg signing plugin
 }
 
 group = 'io.dogakday'
-version = '1.0.0'
+version = '0.1.0'
 
 repositories {
     mavenCentral()
@@ -17,4 +19,54 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+signing {
+    sign publishing.publications
+}
+
+
+
+import com.vanniktech.maven.publish.JavaLibrary
+import com.vanniktech.maven.publish.JavadocJar
+import com.vanniktech.maven.publish.SonatypeHost
+
+mavenPublishing {
+    // the first parameter configures the -javadoc artifact, possible values:
+    // - `JavadocJar.None()` don't publish this artifact
+    // - `JavadocJar.Empty()` publish an emprt jar
+    // - `JavadocJar.Javadoc()` to publish standard javadocs
+    // the second whether to publish a sources jar
+    configure(new JavaLibrary(new JavadocJar.Javadoc(), true))
+
+    // when publishing to https://central.sonatype.com/
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+
+    // configure the pom file
+    coordinates("io.github.dogakday", "nickname-generator", "0.1.0")
+
+    pom {
+        name = "nickname-generator"
+        description = "Nickname generator composed of adjective + noun."
+        inceptionYear = "2024"
+        url = "https://github.com/dogakday/nickname-generator"
+        licenses {
+            license {
+                name = "MIT License"
+                url = "https://opensource.org/licenses/MIT"
+            }
+        }
+        developers {
+            developer {
+                id = "dogakday"
+                name = "yuseonLim"
+                url = "https://github.com/dogakday"
+            }
+        }
+        scm {
+            url = "https://github.com/dogakday/nickname-generator"
+            connection = "scm:git:git://github.com/dogakday/nickname-generator"
+            developerConnection = "scm:git:ssh://git@github.com/dogakday/nickname-generator"
+        }
+    }
 }
