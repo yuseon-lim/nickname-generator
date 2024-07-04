@@ -77,3 +77,16 @@ We welcome contributions! If you find any issues or have suggestions, please ope
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/dogakday/nickname-generator/blob/main/LICENSE) file for details.
+
+## Credits
+
+The words used in this library were sourced and filtered manually. Here are the references for the word lists used:
+
+- Korean
+  - [위키낱말사전](https://ko.wiktionary.org/wiki)
+- English
+  - Adjectives
+    - [gist by hugsy](https://gist.github.com/hugsy/8910dc78d208e40de42deb29e62df913)
+  - Nouns:
+    - [gist by atduskgreg](https://gist.github.com/atduskgreg/3cf8ef48cb0d29cf151bedad81553a54)
+    - [gist by wsc](https://gist.github.com/wsc/1083459)
