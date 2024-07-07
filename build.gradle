@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'io.dogakday'
-version = '0.1.0'
+version = '0.1.1'
 
 repositories {
     mavenCentral()
@@ -43,7 +43,7 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
 
     // configure the pom file
-    coordinates("io.github.dogakday", "nickname-generator", "0.1.0")
+    coordinates("io.github.dogakday", "nickname-generator", "0.1.1")
 
     pom {
         name = "nickname-generator"
