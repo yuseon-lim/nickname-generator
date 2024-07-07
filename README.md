@@ -9,13 +9,15 @@
 
 ## Installation
 
+> Java 11 or higher is required to use this library.
+
 You can install it using Maven:
 
 ```xml
 <dependency>
     <groupId>io.github.dogakday</groupId>
     <artifactId>nickname-generator</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 </dependency>
 ```
 
@@ -23,13 +25,13 @@ You can also install it using Gradle:
 
 ```groovy
 // gradle
-implementation group: 'io.github.dogakday', name: 'nickname-generator', version: '0.1.0'
+implementation group: 'io.github.dogakday', name: 'nickname-generator', version: '0.1.1'
 
 // gradle (short)
-implementation 'io.github.dogakday:nickname-generator:0.1.0'
+implementation 'io.github.dogakday:nickname-generator:0.1.1'
 
 // gradle (kotlin)
-implementation("io.github.dogakday:nickname-generator:0.1.0")
+implementation("io.github.dogakday:nickname-generator:0.1.1")
 ```
 
 ## Usage
